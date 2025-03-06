@@ -21,7 +21,7 @@
         color: aliceblue; /*Definir a cor texto do botão*/
         border: none; /*Remover a borda do botão*/
         border-radius: 5px; /*Adicionar cantos arredondados*/
-
+        
        }
     </style>
 </head>
@@ -30,5 +30,14 @@
     <h1>Bem vindo ao primeiro site</h1>
     <!--Mudara o fundo da pagina-->
     <button onclick="mudarCor()">Mudar Cor de Fundo</button>
+    <script>
+      //Função JavaScript para mudar a cor de fundo da pagina
+      function mudarCor(){
+        //Gerar uma cor aleatoria em formato hexadecimal
+      var corAleatoria ='#'  Math.floor(Marth.random()*16777215).toString(16)
+      //Aplica nova cor ao fundo da pagina
+      document.body.stle.background = corAleatoria;
+          }
+    </script>
 </body>
 </html>
